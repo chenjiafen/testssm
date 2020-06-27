@@ -21,5 +21,9 @@ public interface GatheringMapper {
    /**
     * 把name为a的数据状态更新为2
     */
-   void updateGathering(@Param("ga") Gathering ga,@Param ( "ID" ) Object id);
+   void updateGathering(Gathering ga);
+
+   Boolean updategathering(@Param ( "ga" ) Gathering ga);
+
+   void updatega(List<Gathering> ga);
 }
