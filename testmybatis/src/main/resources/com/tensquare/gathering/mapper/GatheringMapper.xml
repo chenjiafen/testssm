@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.tensquare.gathering.mapper.GatheringMapper">
+
+    <select id="getGatheringList" resultType="com.tensquare.gathering.pojo.Gathering">
+      select * from tb_gathering;
+    </select>
+
+    <select id="getGathering" resultType="com.tensquare.gathering.pojo.Gathering">
+      select * from tb_gathering where id=#{ga.id} and `name`=#{ga.name};
+    </select>
+
+    <select id="getByName" resultType="com.tensquare.gathering.pojo.Gathering">
+      select * from tb_gathering where `name`=#{ga.name};
+    </select>
+    <update id="updateGathering" parameterType="com.tensquare.gathering.pojo.Gathering">
+      update    tb_gathering
+      <set>
+          <if test="ga.name !=null">
+              `name`=#{ga.name}
+          </if>
+          <if test="ga.summary !=null">
+              `summary`=#{ga.summary}
+          </if>
+          <if test="ga.detail !=null">
+              `detail`=#{ga.detail}
+          </if>
+          <if test="ga.sponsor !=null">
+              `sponsor`=#{ga.sponsor}
+          </if>
+          <if test="ga.image !=null">
+              `image`=#{ga.image}
+          </if>
+          <if test="ga.starttime !=null">
+              `starttime`=#{ga.starttime}
+          </if>
+          <if test="ga.address !=null">
+              `address`=#{ga.address}
+          </if>
+          <if test="ga.enrolltime !=null">
+              `enrolltime`=#{ga.enrolltime}
+          </if>
+          <if test="ga.state !=null">
+              `state`=#{ga.state}
+          </if>
+          <if test="ga.city !=null">
+              `city`=#{ga.city}
+          </if>
+      </set>
+      where id={ID.id} ;
+    </update>
+</mapper>
