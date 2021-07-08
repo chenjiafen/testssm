@@ -1,10 +1,35 @@
 server:
-  port: 9999
+  port: 9988
 spring:
   application:
     name: tensquare_gathering #指定服务名
   datasource:
-    driverClassName: com.mysql.jdbc.Driver
-    url: jdbc:mysql://192.168.248.135:3306/tensquare_gathering?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&useSSL=false
-    username: root
-    password: 123456
+        driverClassName: com.mysql.jdbc.Driver
+#        tensquare_gathering,
+        url: jdbc:mysql://localhost:3306/tensquare_user?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&useSSL=false
+        username: root
+        password: root
+    #    主数据库
+#primary:
+  ##      driverClassName: com.mysql.jdbc.Driver
+  ##      url: jdbc:mysql://localhost:3306/tensquare_gathering?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&useSSL=false
+  ##      username: root
+  ##      password: root
+  ##    secondary:
+  ##        driverClassName: com.mysql.jdbc.Driver
+  ##        url: jdbc:mysql://172.23.8.99:3307/metersphere?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&useSSL=false
+  ##        username: root
+  ##        password: Password123@mysql
+mybatis:
+  mapper-locations: classpath*:/mapper/**/*.xml
+  configuration:
+    map-underscore-to-camel-case: true #解决属性名和数据不一致的驼峰命名法
+    call-setters-on-nulls: true # 调用setter null，返回空也必须设置到bean中（直接执行sql专用）
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl #日志输出sql
+
+logging:
+  pattern:
+    #格式化，只能输出日期和内容
+    console: "%d - %msg%n"
+  path: testmybatis/src/main/resources/log
+  file: ${logging.path}/base.log

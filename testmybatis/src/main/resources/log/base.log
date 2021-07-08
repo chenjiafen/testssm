@@ -1,0 +1,824 @@
+2021-07-07 05:23:54.677  WARN 14500 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9h39m296ms926µs500ns).
+2021-07-07 10:03:50.397  WARN 14500 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4h35m25s414ms71µs600ns).
+2021-07-07 13:51:29.808  INFO 21196 --- [main] c.t.gathering.GatheringApplication       : Starting GatheringApplication on SZLXBG0253852 with PID 21196 (D:\WeWork\testssm\testmybatis\target\classes started by chenjiafeng2 in D:\WeWork\testssm)
+2021-07-07 13:51:29.810  INFO 21196 --- [main] c.t.gathering.GatheringApplication       : No active profile set, falling back to default profiles: default
+2021-07-07 13:51:29.845  INFO 21196 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6e20b53a: startup date [Wed Jul 07 13:51:29 CST 2021]; root of context hierarchy
+2021-07-07 13:51:30.779  INFO 21196 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9988 (http)
+2021-07-07 13:51:30.793  INFO 21196 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-07-07 13:51:30.793  INFO 21196 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.29
+2021-07-07 13:51:30.797  INFO 21196 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.27] using APR version [1.7.0].
+2021-07-07 13:51:30.797  INFO 21196 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-07-07 13:51:30.797  INFO 21196 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-07-07 13:51:30.809  INFO 21196 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+2021-07-07 13:51:30.864  INFO 21196 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-07-07 13:51:30.864  INFO 21196 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1019 ms
+2021-07-07 13:51:30.948  INFO 21196 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2021-07-07 13:51:30.949  INFO 21196 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2021-07-07 13:51:30.949  INFO 21196 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2021-07-07 13:51:30.949  INFO 21196 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2021-07-07 13:51:30.949  INFO 21196 --- [localhost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2021-07-07 13:51:30.949  INFO 21196 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2021-07-07 13:51:31.323  INFO 21196 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: aded16b6-98e4-49e4-aafa-a220853ca410
+
+2021-07-07 13:51:31.449  INFO 21196 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@39651a82, org.springframework.security.web.context.SecurityContextPersistenceFilter@58f07f02, org.springframework.security.web.header.HeaderWriterFilter@15f2eda3, org.springframework.security.web.authentication.logout.LogoutFilter@6ac0b715, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@40f8f5a8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3f93e4a8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6be7bf6d, org.springframework.security.web.session.SessionManagementFilter@7b4acdc2, org.springframework.security.web.access.ExceptionTranslationFilter@724c5cbe, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@68c7ef83]
+2021-07-07 13:51:31.482  INFO 21196 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-07-07 13:51:31.587  INFO 21196 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6e20b53a: startup date [Wed Jul 07 13:51:29 CST 2021]; root of context hierarchy
+2021-07-07 13:51:31.625  INFO 21196 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/gathering/findName],methods=[POST]}" onto public com.tensquare.gathering.utils.Result com.tensquare.gathering.controller.GatheringController.findByName(com.tensquare.gathering.entity.Gathering)
+2021-07-07 13:51:31.625  INFO 21196 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/gathering/list],methods=[GET]}" onto public com.tensquare.gathering.utils.Result com.tensquare.gathering.controller.GatheringController.getgatheringList()
+2021-07-07 13:51:31.626  INFO 21196 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/gathering/gathering],methods=[POST]}" onto public com.tensquare.gathering.utils.Result com.tensquare.gathering.controller.GatheringController.findById(com.tensquare.gathering.entity.Gathering)
+2021-07-07 13:51:31.626  INFO 21196 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/gathering/updateById],methods=[POST]}" onto public com.tensquare.gathering.utils.Result com.tensquare.gathering.controller.GatheringController.updateById(com.tensquare.gathering.entity.Gathering)
+2021-07-07 13:51:31.627  INFO 21196 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/login],methods=[POST]}" onto public com.tensquare.gathering.utils.Result com.tensquare.gathering.controller.UserController.login(com.tensquare.gathering.entity.User)
+2021-07-07 13:51:31.629  INFO 21196 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2021-07-07 13:51:31.630  INFO 21196 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2021-07-07 13:51:31.650  INFO 21196 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-07-07 13:51:31.650  INFO 21196 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-07-07 13:51:31.756  INFO 21196 --- [main] o.s.ui.freemarker.SpringTemplateLoader   : SpringTemplateLoader for FreeMarker: using resource loader [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6e20b53a: startup date [Wed Jul 07 13:51:29 CST 2021]; root of context hierarchy] and template loader path [classpath:/templates/]
+2021-07-07 13:51:31.756  INFO 21196 --- [main] o.s.w.s.v.f.FreeMarkerConfigurer         : ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2021-07-07 13:51:31.776  WARN 21196 --- [main] o.s.b.a.f.FreeMarkerAutoConfiguration    : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2021-07-07 13:51:31.870  INFO 21196 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2021-07-07 13:51:31.871  INFO 21196 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2021-07-07 13:51:31.874  INFO 21196 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2021-07-07 13:51:31.898  INFO 21196 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9988 (http) with context path ''
+2021-07-07 13:51:31.901  INFO 21196 --- [main] c.t.gathering.GatheringApplication       : Started GatheringApplication in 2.384 seconds (JVM running for 2.982)
+2021-07-07 13:51:41.564  INFO 21196 --- [http-nio-9988-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2021-07-07 13:51:41.564  INFO 21196 --- [http-nio-9988-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2021-07-07 13:51:41.588  INFO 21196 --- [http-nio-9988-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 24 ms
+2021-07-07 13:51:41.684  INFO 21196 --- [http-nio-9988-exec-1] c.t.gathering.aspect.WebLogAspect        : UserController.login Begin 入参为:第1个参数为:User(id=null, mobile=18566582390, password=null, nickname=null, sex=null, birthday=null, avatar=null, email=null, regdate=null, updatedate=null, lastdate=null, online=null, interest=null, personality=null, fanscount=null, followcount=null)
+
+2021-07-07 13:51:41.698  INFO 21196 --- [http-nio-9988-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-07-07 13:51:41.824  INFO 21196 --- [http-nio-9988-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-07-07 13:51:41.861  INFO 21196 --- [http-nio-9988-exec-1] c.t.gathering.aspect.WebLogAspect        : UserController.login End 出参为:Result(flag=true, code=200, message=查询成功, data=User(id=1, mobile=18566582390, password=111111, nickname=小白, sex=男, birthday=Mon Jan 08 15:39:19 CST 2018, avatar=null, email=null, regdate=null, updatedate=null, lastdate=null, online=null, interest=null, personality=null, fanscount=1, followcount=0)),耗时:178
+2021-07-07 13:53:17.865  INFO 15072 --- [main] c.t.gathering.GatheringApplication       : Starting GatheringApplication on SZLXBG0253852 with PID 15072 (D:\WeWork\testssm\testmybatis\target\classes started by chenjiafeng2 in D:\WeWork\testssm)
+2021-07-07 13:53:17.866  INFO 15072 --- [main] c.t.gathering.GatheringApplication       : No active profile set, falling back to default profiles: default
+2021-07-07 13:53:17.898  INFO 15072 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7c729a55: startup date [Wed Jul 07 13:53:17 CST 2021]; root of context hierarchy
+2021-07-07 13:53:18.627  INFO 15072 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9988 (http)
+2021-07-07 13:53:18.638  INFO 15072 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-07-07 13:53:18.638  INFO 15072 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.29
+2021-07-07 13:53:18.640  INFO 15072 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.27] using APR version [1.7.0].
+2021-07-07 13:53:18.640  INFO 15072 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-07-07 13:53:18.640  INFO 15072 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-07-07 13:53:18.642  INFO 15072 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+2021-07-07 13:53:18.685  INFO 15072 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-07-07 13:53:18.685  INFO 15072 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 787 ms
+2021-07-07 13:53:18.764  INFO 15072 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2021-07-07 13:53:18.764  INFO 15072 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2021-07-07 13:53:18.764  INFO 15072 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2021-07-07 13:53:18.764  INFO 15072 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2021-07-07 13:53:18.765  INFO 15072 --- [localhost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2021-07-07 13:53:18.765  INFO 15072 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2021-07-07 13:53:19.034  INFO 15072 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 237f07fd-8246-4643-8955-37d21384160f
+
+2021-07-07 13:53:19.143  INFO 15072 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@12010fd1, org.springframework.security.web.context.SecurityContextPersistenceFilter@3ae2ed38, org.springframework.security.web.header.HeaderWriterFilter@5edf2821, org.springframework.security.web.authentication.logout.LogoutFilter@65ec8b24, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2add4d24, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@67110f71, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7c84195, org.springframework.security.web.session.SessionManagementFilter@7d070ef5, org.springframework.security.web.access.ExceptionTranslationFilter@4d7aaca2, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4beeb0e]
+2021-07-07 13:53:19.175  INFO 15072 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-07-07 13:53:19.265  INFO 15072 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7c729a55: startup date [Wed Jul 07 13:53:17 CST 2021]; root of context hierarchy
+2021-07-07 13:53:19.293  INFO 15072 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/gathering/gathering],methods=[POST]}" onto public com.tensquare.gathering.utils.Result com.tensquare.gathering.controller.GatheringController.findById(com.tensquare.gathering.entity.Gathering)
+2021-07-07 13:53:19.293  INFO 15072 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/gathering/list],methods=[GET]}" onto public com.tensquare.gathering.utils.Result com.tensquare.gathering.controller.GatheringController.getgatheringList()
+2021-07-07 13:53:19.293  INFO 15072 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/gathering/updateById],methods=[POST]}" onto public com.tensquare.gathering.utils.Result com.tensquare.gathering.controller.GatheringController.updateById(com.tensquare.gathering.entity.Gathering)
+2021-07-07 13:53:19.294  INFO 15072 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/gathering/findName],methods=[POST]}" onto public com.tensquare.gathering.utils.Result com.tensquare.gathering.controller.GatheringController.findByName(com.tensquare.gathering.entity.Gathering)
+2021-07-07 13:53:19.294  INFO 15072 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/login],methods=[POST]}" onto public com.tensquare.gathering.utils.Result com.tensquare.gathering.controller.UserController.login(com.tensquare.gathering.entity.User)
+2021-07-07 13:53:19.295  INFO 15072 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2021-07-07 13:53:19.295  INFO 15072 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2021-07-07 13:53:19.311  INFO 15072 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-07-07 13:53:19.311  INFO 15072 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-07-07 13:53:19.405  INFO 15072 --- [main] o.s.ui.freemarker.SpringTemplateLoader   : SpringTemplateLoader for FreeMarker: using resource loader [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7c729a55: startup date [Wed Jul 07 13:53:17 CST 2021]; root of context hierarchy] and template loader path [classpath:/templates/]
+2021-07-07 13:53:19.406  INFO 15072 --- [main] o.s.w.s.v.f.FreeMarkerConfigurer         : ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2021-07-07 13:53:19.423  WARN 15072 --- [main] o.s.b.a.f.FreeMarkerAutoConfiguration    : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2021-07-07 13:53:19.494  INFO 15072 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2021-07-07 13:53:19.495  INFO 15072 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2021-07-07 13:53:19.498  INFO 15072 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2021-07-07 13:53:19.515  INFO 15072 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9988 (http) with context path ''
+2021-07-07 13:53:19.518  INFO 15072 --- [main] c.t.gathering.GatheringApplication       : Started GatheringApplication in 1.865 seconds (JVM running for 2.352)
+2021-07-07 13:53:22.881  INFO 15072 --- [http-nio-9988-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2021-07-07 13:53:22.881  INFO 15072 --- [http-nio-9988-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2021-07-07 13:53:22.896  INFO 15072 --- [http-nio-9988-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 15 ms
+2021-07-07 13:53:22.965  INFO 15072 --- [http-nio-9988-exec-2] c.t.gathering.aspect.WebLogAspect        : UserController.login Begin 入参为:第1个参数为:User(id=null, mobile=18566582390, password=null, nickname=null, sex=null, birthday=null, avatar=null, email=null, regdate=null, updatedate=null, lastdate=null, online=null, interest=null, personality=null, fanscount=null, followcount=null)
+
+2021-07-07 13:53:22.977  INFO 15072 --- [http-nio-9988-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-07-07 13:53:23.078  INFO 15072 --- [http-nio-9988-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-07-07 13:53:23.110  INFO 15072 --- [http-nio-9988-exec-2] c.t.gathering.aspect.WebLogAspect        : UserController.login End 出参为:Result(flag=true, code=200, message=查询成功, data=User(id=1, mobile=18566582390, password=111111, nickname=小白, sex=男, birthday=Mon Jan 08 15:39:19 CST 2018, avatar=null, email=null, regdate=null, updatedate=null, lastdate=null, online=null, interest=null, personality=null, fanscount=1, followcount=0)),耗时:145
+2021-07-07 16:30:06.473  INFO 9252 --- [main] c.t.gathering.GatheringApplication       : Starting GatheringApplication on SZLXBG0253852 with PID 9252 (D:\WeWork\testssm\testmybatis\target\classes started by chenjiafeng2 in D:\WeWork\testssm)
+2021-07-07 16:30:06.477  INFO 9252 --- [main] c.t.gathering.GatheringApplication       : No active profile set, falling back to default profiles: default
+2021-07-07 16:30:06.526  INFO 9252 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7d9e8ef7: startup date [Wed Jul 07 16:30:06 CST 2021]; root of context hierarchy
+2021-07-07 16:30:07.356  INFO 9252 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9988 (http)
+2021-07-07 16:30:07.370  INFO 9252 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-07-07 16:30:07.370  INFO 9252 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.29
+2021-07-07 16:30:07.373  INFO 9252 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.27] using APR version [1.7.0].
+2021-07-07 16:30:07.373  INFO 9252 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-07-07 16:30:07.373  INFO 9252 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-07-07 16:30:07.375  INFO 9252 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+2021-07-07 16:30:07.427  INFO 9252 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-07-07 16:30:07.427  INFO 9252 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 901 ms
+2021-07-07 16:30:07.549  INFO 9252 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2021-07-07 16:30:07.550  INFO 9252 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2021-07-07 16:30:07.551  INFO 9252 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2021-07-07 16:30:07.551  INFO 9252 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2021-07-07 16:30:07.551  INFO 9252 --- [localhost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2021-07-07 16:30:07.551  INFO 9252 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2021-07-07 16:30:16.841  INFO 9252 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 1754b115-c19d-4217-a1b9-a7e4479f97ba
+
+2021-07-07 16:30:29.085  INFO 9252 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@55fdf7f9, org.springframework.security.web.context.SecurityContextPersistenceFilter@54c622a7, org.springframework.security.web.header.HeaderWriterFilter@9f674ac, org.springframework.security.web.authentication.logout.LogoutFilter@dd4aec3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@76e3b45b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@22d322f5, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4091b9c3, org.springframework.security.web.session.SessionManagementFilter@5792c08c, org.springframework.security.web.access.ExceptionTranslationFilter@35b17c06, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@21bd128b]
+2021-07-07 16:30:37.220  INFO 9252 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-07-07 16:31:04.175  INFO 9252 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7d9e8ef7: startup date [Wed Jul 07 16:30:06 CST 2021]; root of context hierarchy
+2021-07-07 16:31:08.478  INFO 9252 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/login],methods=[POST]}" onto public com.tensquare.gathering.utils.Result com.tensquare.gathering.controller.AdminController.login(java.util.Map<java.lang.String, java.lang.String>)
+2021-07-07 16:31:08.717  INFO 9252 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/gathering/list],methods=[GET]}" onto public com.tensquare.gathering.utils.Result com.tensquare.gathering.controller.GatheringController.getgatheringList()
+2021-07-07 16:31:08.737  INFO 9252 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/gathering/gathering],methods=[POST]}" onto public com.tensquare.gathering.utils.Result com.tensquare.gathering.controller.GatheringController.findById(com.tensquare.gathering.entity.Gathering)
+2021-07-07 16:31:08.757  INFO 9252 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/gathering/updateById],methods=[POST]}" onto public com.tensquare.gathering.utils.Result com.tensquare.gathering.controller.GatheringController.updateById(com.tensquare.gathering.entity.Gathering)
+2021-07-07 16:31:08.777  INFO 9252 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/gathering/findName],methods=[POST]}" onto public com.tensquare.gathering.utils.Result com.tensquare.gathering.controller.GatheringController.findByName(com.tensquare.gathering.entity.Gathering)
+2021-07-07 16:31:08.836  INFO 9252 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/add],methods=[POST]}" onto public com.tensquare.gathering.utils.Result com.tensquare.gathering.controller.UserController.add(com.tensquare.gathering.entity.User)
+2021-07-07 16:31:08.857  INFO 9252 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/login],methods=[POST]}" onto public com.tensquare.gathering.utils.Result com.tensquare.gathering.controller.UserController.login(com.tensquare.gathering.entity.User)
+2021-07-07 16:31:09.108  INFO 9252 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2021-07-07 16:31:09.136  INFO 9252 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2021-07-07 16:31:14.280  INFO 9252 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-07-07 16:31:14.284  INFO 9252 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-07-07 16:31:32.401  INFO 9252 --- [main] o.s.ui.freemarker.SpringTemplateLoader   : SpringTemplateLoader for FreeMarker: using resource loader [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7d9e8ef7: startup date [Wed Jul 07 16:30:06 CST 2021]; root of context hierarchy] and template loader path [classpath:/templates/]
+2021-07-07 16:31:32.416  INFO 9252 --- [main] o.s.w.s.v.f.FreeMarkerConfigurer         : ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2021-07-07 16:31:38.592  WARN 9252 --- [main] o.s.b.a.f.FreeMarkerAutoConfiguration    : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2021-07-07 16:32:03.196  INFO 9252 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2021-07-07 16:32:03.319  INFO 9252 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2021-07-07 16:32:03.989  INFO 9252 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2021-07-07 16:32:05.289  INFO 9252 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9988 (http) with context path ''
+2021-07-07 16:32:05.405  INFO 9252 --- [main] c.t.gathering.GatheringApplication       : Started GatheringApplication in 119.251 seconds (JVM running for 119.834)
+2021-07-07 16:32:20.510  INFO 9252 --- [Thread-46] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7d9e8ef7: startup date [Wed Jul 07 16:30:06 CST 2021]; root of context hierarchy
+2021-07-07 16:32:20.513  INFO 9252 --- [Thread-46] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2021-07-07 16:32:20.513  INFO 9252 --- [Thread-46] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2021-07-07 16:32:23.862  INFO 21948 --- [main] c.t.gathering.GatheringApplication       : Starting GatheringApplication on SZLXBG0253852 with PID 21948 (D:\WeWork\testssm\testmybatis\target\classes started by chenjiafeng2 in D:\WeWork\testssm)
+2021-07-07 16:32:23.865  INFO 21948 --- [main] c.t.gathering.GatheringApplication       : No active profile set, falling back to default profiles: default
+2021-07-07 16:32:23.901  INFO 21948 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7c729a55: startup date [Wed Jul 07 16:32:23 CST 2021]; root of context hierarchy
+2021-07-07 16:32:24.717  INFO 21948 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9988 (http)
+2021-07-07 16:32:24.728  INFO 21948 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-07-07 16:32:24.728  INFO 21948 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.29
+2021-07-07 16:32:24.731  INFO 21948 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.27] using APR version [1.7.0].
+2021-07-07 16:32:24.731  INFO 21948 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-07-07 16:32:24.731  INFO 21948 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-07-07 16:32:24.733  INFO 21948 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+2021-07-07 16:32:24.783  INFO 21948 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-07-07 16:32:24.783  INFO 21948 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 882 ms
+2021-07-07 16:32:24.873  INFO 21948 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2021-07-07 16:32:24.873  INFO 21948 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2021-07-07 16:32:24.873  INFO 21948 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2021-07-07 16:32:24.873  INFO 21948 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2021-07-07 16:32:24.874  INFO 21948 --- [localhost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2021-07-07 16:32:24.874  INFO 21948 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2021-07-07 16:32:25.193  INFO 21948 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 04013e4e-eea7-4a92-a9e5-3f4044baa3c3
+
+2021-07-07 16:32:25.319  INFO 21948 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@99407c2, org.springframework.security.web.context.SecurityContextPersistenceFilter@30d25c03, org.springframework.security.web.header.HeaderWriterFilter@468be356, org.springframework.security.web.authentication.logout.LogoutFilter@9a6fbc0, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@116a2108, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@38018b62, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6c796cc1, org.springframework.security.web.session.SessionManagementFilter@598260a6, org.springframework.security.web.access.ExceptionTranslationFilter@7c75db8b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@54d901aa]
+2021-07-07 16:32:25.352  INFO 21948 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-07-07 16:32:25.454  INFO 21948 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7c729a55: startup date [Wed Jul 07 16:32:23 CST 2021]; root of context hierarchy
+2021-07-07 16:32:25.487  INFO 21948 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/login],methods=[POST]}" onto public com.tensquare.gathering.utils.Result com.tensquare.gathering.controller.AdminController.login(java.util.Map<java.lang.String, java.lang.String>)
+2021-07-07 16:32:25.489  INFO 21948 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/gathering/findName],methods=[POST]}" onto public com.tensquare.gathering.utils.Result com.tensquare.gathering.controller.GatheringController.findByName(com.tensquare.gathering.entity.Gathering)
+2021-07-07 16:32:25.489  INFO 21948 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/gathering/list],methods=[GET]}" onto public com.tensquare.gathering.utils.Result com.tensquare.gathering.controller.GatheringController.getgatheringList()
+2021-07-07 16:32:25.489  INFO 21948 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/gathering/gathering],methods=[POST]}" onto public com.tensquare.gathering.utils.Result com.tensquare.gathering.controller.GatheringController.findById(com.tensquare.gathering.entity.Gathering)
+2021-07-07 16:32:25.489  INFO 21948 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/gathering/updateById],methods=[POST]}" onto public com.tensquare.gathering.utils.Result com.tensquare.gathering.controller.GatheringController.updateById(com.tensquare.gathering.entity.Gathering)
+2021-07-07 16:32:25.490  INFO 21948 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/add],methods=[POST]}" onto public com.tensquare.gathering.utils.Result com.tensquare.gathering.controller.UserController.add(com.tensquare.gathering.entity.User)
+2021-07-07 16:32:25.490  INFO 21948 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/login],methods=[POST]}" onto public com.tensquare.gathering.utils.Result com.tensquare.gathering.controller.UserController.login(com.tensquare.gathering.entity.User)
+2021-07-07 16:32:25.492  INFO 21948 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2021-07-07 16:32:25.492  INFO 21948 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2021-07-07 16:32:25.516  INFO 21948 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-07-07 16:32:25.516  INFO 21948 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-07-07 16:32:25.625  INFO 21948 --- [main] o.s.ui.freemarker.SpringTemplateLoader   : SpringTemplateLoader for FreeMarker: using resource loader [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7c729a55: startup date [Wed Jul 07 16:32:23 CST 2021]; root of context hierarchy] and template loader path [classpath:/templates/]
+2021-07-07 16:32:25.625  INFO 21948 --- [main] o.s.w.s.v.f.FreeMarkerConfigurer         : ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2021-07-07 16:32:25.655  WARN 21948 --- [main] o.s.b.a.f.FreeMarkerAutoConfiguration    : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2021-07-07 16:32:25.732  INFO 21948 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2021-07-07 16:32:25.733  INFO 21948 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2021-07-07 16:32:25.736  INFO 21948 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2021-07-07 16:32:25.756  INFO 21948 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9988 (http) with context path ''
+2021-07-07 16:32:25.758  INFO 21948 --- [main] c.t.gathering.GatheringApplication       : Started GatheringApplication in 2.113 seconds (JVM running for 2.586)
+2021-07-07 16:32:30.349  INFO 21948 --- [http-nio-9988-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2021-07-07 16:32:30.349  INFO 21948 --- [http-nio-9988-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2021-07-07 16:32:30.368  INFO 21948 --- [http-nio-9988-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 19 ms
+2021-07-07 16:32:30.469  INFO 21948 --- [http-nio-9988-exec-1] c.t.gathering.aspect.WebLogAspect        : UserController.login Begin 入参为:第1个参数为:User(id=null, mobile=18566582390, password=null, nickname=null, sex=null, birthday=null, avatar=null, email=null, regdate=null, updatedate=null, lastdate=null, online=null, interest=null, personality=null, fanscount=null, followcount=null)
+
+2021-07-07 16:32:30.486  INFO 21948 --- [http-nio-9988-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-07-07 16:32:30.681  INFO 21948 --- [http-nio-9988-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-07-07 16:32:30.733  INFO 21948 --- [http-nio-9988-exec-1] c.t.gathering.aspect.WebLogAspect        : UserController.login End 出参为:Result(flag=true, code=200, message=查询成功, data=User(id=1, mobile=18566582390, password=111111, nickname=小白, sex=男, birthday=Mon Jan 08 15:39:19 CST 2018, avatar=null, email=null, regdate=null, updatedate=null, lastdate=null, online=null, interest=null, personality=null, fanscount=1, followcount=0)),耗时:265
+2021-07-07 16:34:58.599  INFO 21948 --- [http-nio-9988-exec-6] c.t.gathering.aspect.WebLogAspect        : UserController.add Begin 入参为:第1个参数为:User(id=2, mobile=18566582391, password=111111, nickname=小白, sex=男, birthday=Mon Jan 08 15:39:19 CST 2018, avatar=null, email=null, regdate=null, updatedate=null, lastdate=null, online=null, interest=null, personality=null, fanscount=1, followcount=0)
+
+2021-07-07 16:34:58.711  INFO 21948 --- [http-nio-9988-exec-6] c.t.gathering.aspect.WebLogAspect        : UserController.add End 出参为:Result(flag=true, code=1000, message=增加成功, data=null),耗时:112
+2021-07-07 17:23:19.829  INFO 17136 --- [main] c.t.gathering.GatheringApplication       : Starting GatheringApplication on SZLXBG0253852 with PID 17136 (D:\WeWork\testssm\testmybatis\target\classes started by chenjiafeng2 in D:\WeWork\testssm)
+2021-07-07 17:23:19.831  INFO 17136 --- [main] c.t.gathering.GatheringApplication       : No active profile set, falling back to default profiles: default
+2021-07-07 17:23:19.862  INFO 17136 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7c729a55: startup date [Wed Jul 07 17:23:19 CST 2021]; root of context hierarchy
+2021-07-07 17:23:20.572  INFO 17136 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9988 (http)
+2021-07-07 17:23:20.585  INFO 17136 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-07-07 17:23:20.585  INFO 17136 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.29
+2021-07-07 17:23:20.588  INFO 17136 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.27] using APR version [1.7.0].
+2021-07-07 17:23:20.588  INFO 17136 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-07-07 17:23:20.588  INFO 17136 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-07-07 17:23:20.591  INFO 17136 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+2021-07-07 17:23:20.640  INFO 17136 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-07-07 17:23:20.640  INFO 17136 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 778 ms
+2021-07-07 17:23:20.721  INFO 17136 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2021-07-07 17:23:20.721  INFO 17136 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2021-07-07 17:23:20.721  INFO 17136 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2021-07-07 17:23:20.721  INFO 17136 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2021-07-07 17:23:20.721  INFO 17136 --- [localhost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2021-07-07 17:23:20.721  INFO 17136 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2021-07-07 17:23:20.999  INFO 17136 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 015a5be1-72d9-4265-a624-f04d8c88619a
+
+2021-07-07 17:23:21.105  INFO 17136 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7123be6c, org.springframework.security.web.context.SecurityContextPersistenceFilter@1b15f922, org.springframework.security.web.header.HeaderWriterFilter@3f49e266, org.springframework.security.web.authentication.logout.LogoutFilter@1706a5c9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4b869331, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@563a89b5, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1de9d54, org.springframework.security.web.session.SessionManagementFilter@7aead3af, org.springframework.security.web.access.ExceptionTranslationFilter@4df39a88, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@507b79f7]
+2021-07-07 17:23:21.138  INFO 17136 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-07-07 17:23:21.232  INFO 17136 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7c729a55: startup date [Wed Jul 07 17:23:19 CST 2021]; root of context hierarchy
+2021-07-07 17:23:21.260  INFO 17136 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/add],methods=[POST]}" onto public com.tensquare.gathering.utils.Result com.tensquare.gathering.controller.AdminController.adminAdd(com.tensquare.gathering.entity.Admin)
+2021-07-07 17:23:21.261  INFO 17136 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/login],methods=[POST]}" onto public com.tensquare.gathering.utils.Result com.tensquare.gathering.controller.AdminController.login(java.util.Map<java.lang.String, java.lang.String>)
+2021-07-07 17:23:21.262  INFO 17136 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/gathering/findName],methods=[POST]}" onto public com.tensquare.gathering.utils.Result com.tensquare.gathering.controller.GatheringController.findByName(com.tensquare.gathering.entity.Gathering)
+2021-07-07 17:23:21.262  INFO 17136 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/gathering/updateById],methods=[POST]}" onto public com.tensquare.gathering.utils.Result com.tensquare.gathering.controller.GatheringController.updateById(com.tensquare.gathering.entity.Gathering)
+2021-07-07 17:23:21.262  INFO 17136 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/gathering/gathering],methods=[POST]}" onto public com.tensquare.gathering.utils.Result com.tensquare.gathering.controller.GatheringController.findById(com.tensquare.gathering.entity.Gathering)
+2021-07-07 17:23:21.262  INFO 17136 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/gathering/list],methods=[GET]}" onto public com.tensquare.gathering.utils.Result com.tensquare.gathering.controller.GatheringController.getgatheringList()
+2021-07-07 17:23:21.263  INFO 17136 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/login],methods=[POST]}" onto public com.tensquare.gathering.utils.Result com.tensquare.gathering.controller.UserController.login(com.tensquare.gathering.entity.User)
+2021-07-07 17:23:21.263  INFO 17136 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/add],methods=[POST]}" onto public com.tensquare.gathering.utils.Result com.tensquare.gathering.controller.UserController.add(com.tensquare.gathering.entity.User)
+2021-07-07 17:23:21.264  INFO 17136 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2021-07-07 17:23:21.264  INFO 17136 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2021-07-07 17:23:21.282  INFO 17136 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-07-07 17:23:21.282  INFO 17136 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-07-07 17:23:21.376  INFO 17136 --- [main] o.s.ui.freemarker.SpringTemplateLoader   : SpringTemplateLoader for FreeMarker: using resource loader [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7c729a55: startup date [Wed Jul 07 17:23:19 CST 2021]; root of context hierarchy] and template loader path [classpath:/templates/]
+2021-07-07 17:23:21.377  INFO 17136 --- [main] o.s.w.s.v.f.FreeMarkerConfigurer         : ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2021-07-07 17:23:21.405  WARN 17136 --- [main] o.s.b.a.f.FreeMarkerAutoConfiguration    : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2021-07-07 17:23:21.488  INFO 17136 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2021-07-07 17:23:21.489  INFO 17136 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2021-07-07 17:23:21.492  INFO 17136 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2021-07-07 17:23:21.511  INFO 17136 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9988 (http) with context path ''
+2021-07-07 17:23:21.514  INFO 17136 --- [main] c.t.gathering.GatheringApplication       : Started GatheringApplication in 1.911 seconds (JVM running for 2.42)
+2021-07-07 17:23:38.509  INFO 17136 --- [http-nio-9988-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2021-07-07 17:23:38.509  INFO 17136 --- [http-nio-9988-exec-3] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2021-07-07 17:23:38.524  INFO 17136 --- [http-nio-9988-exec-3] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 15 ms
+2021-07-07 17:23:38.592  INFO 17136 --- [http-nio-9988-exec-3] c.t.gathering.aspect.WebLogAspect        : UserController.add Begin 入参为:第1个参数为:User(id=null, mobile=18566582392, password=980985672, nickname=小白, sex=男, birthday=Mon Jan 08 15:39:19 CST 2018, avatar=null, email=null, regdate=null, updatedate=null, lastdate=null, online=null, interest=null, personality=null, fanscount=1, followcount=0)
+
+2021-07-07 17:23:38.688  INFO 17136 --- [http-nio-9988-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-07-07 17:23:38.806  INFO 17136 --- [http-nio-9988-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-07-07 17:23:38.839  INFO 17136 --- [http-nio-9988-exec-3] o.s.b.f.xml.XmlBeanDefinitionReader      : Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+2021-07-07 17:23:38.867  INFO 17136 --- [http-nio-9988-exec-3] o.s.jdbc.support.SQLErrorCodesFactory    : SQLErrorCodes loaded: [DB2, Derby, H2, HDB, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase]
+2021-07-07 17:23:38.875 ERROR 17136 --- [http-nio-9988-exec-3] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.dao.DataIntegrityViolationException: 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'id' cannot be null
+### The error may exist in file [D:\WeWork\testssm\testmybatis\target\classes\mapper\UserMapper.xml]
+### The error may involve com.tensquare.gathering.dao.UserDao.save-Inline
+### The error occurred while setting parameters
+### SQL: insert into tb_user (id, mobile, password,       nickname, sex, birthday,       avatar, email, regdate,       updatedate, lastdate, online,       interest,personality,fanscount,followcount)     values     (?, ?, ?,       ?, ?, ?,       ?, ?, ?,       ?, ?, ?,       ?, ?,?,       ?       )
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'id' cannot be null
+; ]; Column 'id' cannot be null; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'id' cannot be null] with root cause
+
+com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'id' cannot be null
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_281]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_281]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_281]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_281]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425) ~[mysql-connector-java-5.1.46.jar:5.1.46]
+	at com.mysql.jdbc.Util.getInstance(Util.java:408) ~[mysql-connector-java-5.1.46.jar:5.1.46]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:936) ~[mysql-connector-java-5.1.46.jar:5.1.46]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3976) ~[mysql-connector-java-5.1.46.jar:5.1.46]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3912) ~[mysql-connector-java-5.1.46.jar:5.1.46]
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2530) ~[mysql-connector-java-5.1.46.jar:5.1.46]
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2683) ~[mysql-connector-java-5.1.46.jar:5.1.46]
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2486) ~[mysql-connector-java-5.1.46.jar:5.1.46]
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1858) ~[mysql-connector-java-5.1.46.jar:5.1.46]
+	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1197) ~[mysql-connector-java-5.1.46.jar:5.1.46]
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44) ~[HikariCP-2.7.8.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java) ~[HikariCP-2.7.8.jar:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_281]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_281]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_281]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_281]
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59) ~[mybatis-3.5.2.jar:3.5.2]
+	at com.sun.proxy.$Proxy85.execute(Unknown Source) ~[na:na]
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:47) ~[mybatis-3.5.2.jar:3.5.2]
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74) ~[mybatis-3.5.2.jar:3.5.2]
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50) ~[mybatis-3.5.2.jar:3.5.2]
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117) ~[mybatis-3.5.2.jar:3.5.2]
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76) ~[mybatis-3.5.2.jar:3.5.2]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197) ~[mybatis-3.5.2.jar:3.5.2]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:184) ~[mybatis-3.5.2.jar:3.5.2]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_281]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_281]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_281]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_281]
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426) ~[mybatis-spring-2.0.2.jar:2.0.2]
+	at com.sun.proxy.$Proxy70.insert(Unknown Source) ~[na:na]
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:271) ~[mybatis-spring-2.0.2.jar:2.0.2]
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:62) ~[mybatis-3.5.2.jar:3.5.2]
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:57) ~[mybatis-3.5.2.jar:3.5.2]
+	at com.sun.proxy.$Proxy74.save(Unknown Source) ~[na:na]
+	at com.tensquare.gathering.service.UserService.add(UserService.java:49) ~[classes/:na]
+	at com.tensquare.gathering.controller.UserController.add(UserController.java:40) ~[classes/:na]
+	at com.tensquare.gathering.controller.UserController$$FastClassBySpringCGLIB$$c791cd31.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204) ~[spring-core-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:747) ~[spring-aop-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:52) ~[spring-aop-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185) ~[spring-aop-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:52) ~[spring-aop-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185) ~[spring-aop-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92) ~[spring-aop-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185) ~[spring-aop-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:689) ~[spring-aop-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at com.tensquare.gathering.controller.UserController$$EnhancerBySpringCGLIB$$8c8de01f.add(<generated>) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_281]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_281]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_281]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_281]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209) ~[spring-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136) ~[spring-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102) ~[spring-webmvc-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:877) ~[spring-webmvc-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:783) ~[spring-webmvc-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991) ~[spring-webmvc-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925) ~[spring-webmvc-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974) ~[spring-webmvc-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:877) ~[spring-webmvc-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851) ~[spring-webmvc-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-embed-websocket-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:320) ~[spring-security-web-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:127) ~[spring-security-web-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:91) ~[spring-security-web-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119) ~[spring-security-web-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137) ~[spring-security-web-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111) ~[spring-security-web-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:170) ~[spring-security-web-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116) ~[spring-security-web-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:66) ~[spring-security-web-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105) ~[spring-security-web-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56) ~[spring-security-web-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215) ~[spring-security-web-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178) ~[spring-security-web-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357) ~[spring-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270) ~[spring-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109) ~[spring-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81) ~[spring-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) ~[spring-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_281]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_281]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_281]
+
+2021-07-07 17:24:16.556  INFO 20324 --- [main] c.t.gathering.GatheringApplication       : Starting GatheringApplication on SZLXBG0253852 with PID 20324 (D:\WeWork\testssm\testmybatis\target\classes started by chenjiafeng2 in D:\WeWork\testssm)
+2021-07-07 17:24:16.558  INFO 20324 --- [main] c.t.gathering.GatheringApplication       : No active profile set, falling back to default profiles: default
+2021-07-07 17:24:16.590  INFO 20324 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7c729a55: startup date [Wed Jul 07 17:24:16 CST 2021]; root of context hierarchy
+2021-07-07 17:24:17.366  INFO 20324 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9988 (http)
+2021-07-07 17:24:17.380  INFO 20324 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-07-07 17:24:17.380  INFO 20324 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.29
+2021-07-07 17:24:17.382  INFO 20324 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.27] using APR version [1.7.0].
+2021-07-07 17:24:17.382  INFO 20324 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-07-07 17:24:17.383  INFO 20324 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-07-07 17:24:17.385  INFO 20324 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+2021-07-07 17:24:17.434  INFO 20324 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-07-07 17:24:17.434  INFO 20324 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 844 ms
+2021-07-07 17:24:17.536  INFO 20324 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2021-07-07 17:24:17.537  INFO 20324 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2021-07-07 17:24:17.537  INFO 20324 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2021-07-07 17:24:17.537  INFO 20324 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2021-07-07 17:24:17.537  INFO 20324 --- [localhost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2021-07-07 17:24:17.537  INFO 20324 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2021-07-07 17:24:17.934  INFO 20324 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: becfda3a-2c99-4d55-be64-3eb08de6dad3
+
+2021-07-07 17:24:18.067  INFO 20324 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7123be6c, org.springframework.security.web.context.SecurityContextPersistenceFilter@1b15f922, org.springframework.security.web.header.HeaderWriterFilter@3f49e266, org.springframework.security.web.authentication.logout.LogoutFilter@1706a5c9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4b869331, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@563a89b5, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1de9d54, org.springframework.security.web.session.SessionManagementFilter@7aead3af, org.springframework.security.web.access.ExceptionTranslationFilter@4df39a88, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@507b79f7]
+2021-07-07 17:24:18.099  INFO 20324 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-07-07 17:24:18.196  INFO 20324 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7c729a55: startup date [Wed Jul 07 17:24:16 CST 2021]; root of context hierarchy
+2021-07-07 17:24:18.226  INFO 20324 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/add],methods=[POST]}" onto public com.tensquare.gathering.utils.Result com.tensquare.gathering.controller.AdminController.adminAdd(com.tensquare.gathering.entity.Admin)
+2021-07-07 17:24:18.226  INFO 20324 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/login],methods=[POST]}" onto public com.tensquare.gathering.utils.Result com.tensquare.gathering.controller.AdminController.login(java.util.Map<java.lang.String, java.lang.String>)
+2021-07-07 17:24:18.228  INFO 20324 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/gathering/findName],methods=[POST]}" onto public com.tensquare.gathering.utils.Result com.tensquare.gathering.controller.GatheringController.findByName(com.tensquare.gathering.entity.Gathering)
+2021-07-07 17:24:18.228  INFO 20324 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/gathering/updateById],methods=[POST]}" onto public com.tensquare.gathering.utils.Result com.tensquare.gathering.controller.GatheringController.updateById(com.tensquare.gathering.entity.Gathering)
+2021-07-07 17:24:18.228  INFO 20324 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/gathering/list],methods=[GET]}" onto public com.tensquare.gathering.utils.Result com.tensquare.gathering.controller.GatheringController.getgatheringList()
+2021-07-07 17:24:18.229  INFO 20324 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/gathering/gathering],methods=[POST]}" onto public com.tensquare.gathering.utils.Result com.tensquare.gathering.controller.GatheringController.findById(com.tensquare.gathering.entity.Gathering)
+2021-07-07 17:24:18.229  INFO 20324 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/login],methods=[POST]}" onto public com.tensquare.gathering.utils.Result com.tensquare.gathering.controller.UserController.login(com.tensquare.gathering.entity.User)
+2021-07-07 17:24:18.229  INFO 20324 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/add],methods=[POST]}" onto public com.tensquare.gathering.utils.Result com.tensquare.gathering.controller.UserController.add(com.tensquare.gathering.entity.User)
+2021-07-07 17:24:18.230  INFO 20324 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2021-07-07 17:24:18.231  INFO 20324 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2021-07-07 17:24:18.249  INFO 20324 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-07-07 17:24:18.249  INFO 20324 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-07-07 17:24:18.332  INFO 20324 --- [main] o.s.ui.freemarker.SpringTemplateLoader   : SpringTemplateLoader for FreeMarker: using resource loader [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7c729a55: startup date [Wed Jul 07 17:24:16 CST 2021]; root of context hierarchy] and template loader path [classpath:/templates/]
+2021-07-07 17:24:18.333  INFO 20324 --- [main] o.s.w.s.v.f.FreeMarkerConfigurer         : ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2021-07-07 17:24:18.348  WARN 20324 --- [main] o.s.b.a.f.FreeMarkerAutoConfiguration    : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2021-07-07 17:24:18.433  INFO 20324 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2021-07-07 17:24:18.434  INFO 20324 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2021-07-07 17:24:18.438  INFO 20324 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2021-07-07 17:24:18.471  INFO 20324 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9988 (http) with context path ''
+2021-07-07 17:24:18.473  INFO 20324 --- [main] c.t.gathering.GatheringApplication       : Started GatheringApplication in 2.124 seconds (JVM running for 2.593)
+2021-07-07 17:24:21.042  INFO 20324 --- [http-nio-9988-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2021-07-07 17:24:21.042  INFO 20324 --- [http-nio-9988-exec-3] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2021-07-07 17:24:21.058  INFO 20324 --- [http-nio-9988-exec-3] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 16 ms
+2021-07-07 17:24:21.136  INFO 20324 --- [http-nio-9988-exec-3] c.t.gathering.aspect.WebLogAspect        : UserController.add Begin 入参为:第1个参数为:User(id=null, mobile=18566582392, password=980985672, nickname=小白, sex=男, birthday=Mon Jan 08 15:39:19 CST 2018, avatar=null, email=null, regdate=null, updatedate=null, lastdate=null, online=null, interest=null, personality=null, fanscount=1, followcount=0)
+
+2021-07-07 17:24:21.229  INFO 20324 --- [http-nio-9988-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-07-07 17:24:21.356  INFO 20324 --- [http-nio-9988-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-07-07 17:24:21.383  INFO 20324 --- [http-nio-9988-exec-3] c.t.gathering.aspect.WebLogAspect        : UserController.add End 出参为:Result(flag=true, code=200, message=增加成功, data=null),耗时:248
+2021-07-07 17:25:18.127  INFO 20324 --- [http-nio-9988-exec-7] c.t.gathering.aspect.WebLogAspect        : UserController.add Begin 入参为:第1个参数为:User(id=null, mobile=18566582390, password=980985672, nickname=小黑, sex=男, birthday=Mon Jan 08 15:39:19 CST 2018, avatar=null, email=null, regdate=null, updatedate=null, lastdate=null, online=null, interest=null, personality=null, fanscount=1, followcount=0)
+
+2021-07-07 17:25:18.207  INFO 20324 --- [http-nio-9988-exec-7] c.t.gathering.aspect.WebLogAspect        : UserController.add End 出参为:Result(flag=true, code=200, message=增加成功, data=null),耗时:80
+2021-07-07 17:40:21.905  INFO 17020 --- [main] c.t.gathering.GatheringApplication       : Starting GatheringApplication on SZLXBG0253852 with PID 17020 (D:\WeWork\testssm\testmybatis\target\classes started by chenjiafeng2 in D:\WeWork\testssm)
+2021-07-07 17:40:21.907  INFO 17020 --- [main] c.t.gathering.GatheringApplication       : No active profile set, falling back to default profiles: default
+2021-07-07 17:40:21.932  INFO 17020 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7c729a55: startup date [Wed Jul 07 17:40:21 CST 2021]; root of context hierarchy
+2021-07-07 17:40:22.771  INFO 17020 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9988 (http)
+2021-07-07 17:40:22.783  INFO 17020 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-07-07 17:40:22.783  INFO 17020 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.29
+2021-07-07 17:40:22.785  INFO 17020 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.27] using APR version [1.7.0].
+2021-07-07 17:40:22.786  INFO 17020 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-07-07 17:40:22.786  INFO 17020 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-07-07 17:40:22.788  INFO 17020 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+2021-07-07 17:40:22.853  INFO 17020 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-07-07 17:40:22.854  INFO 17020 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 922 ms
+2021-07-07 17:40:22.980  INFO 17020 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2021-07-07 17:40:22.981  INFO 17020 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2021-07-07 17:40:22.981  INFO 17020 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2021-07-07 17:40:22.981  INFO 17020 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2021-07-07 17:40:22.981  INFO 17020 --- [localhost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2021-07-07 17:40:22.981  INFO 17020 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2021-07-07 17:40:23.243  WARN 17020 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adminController': Unsatisfied dependency expressed through field 'adminService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adminService': Unsatisfied dependency expressed through field 'adminDao'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adminDao' defined in file [D:\WeWork\testssm\testmybatis\target\classes\com\tensquare\gathering\dao\AdminDao.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [D:\WeWork\testssm\testmybatis\target\classes\mapper\UserMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [D:\WeWork\testssm\testmybatis\target\classes\mapper\UserMapper.xml]'. Cause: java.lang.IllegalArgumentException: Result Maps collection already contains value for com.tensquare.gathering.dao.UserDao.UserResultMap
+2021-07-07 17:40:23.245  INFO 17020 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2021-07-07 17:40:23.256  INFO 17020 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-07-07 17:40:23.263 ERROR 17020 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adminController': Unsatisfied dependency expressed through field 'adminService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adminService': Unsatisfied dependency expressed through field 'adminDao'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adminDao' defined in file [D:\WeWork\testssm\testmybatis\target\classes\com\tensquare\gathering\dao\AdminDao.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [D:\WeWork\testssm\testmybatis\target\classes\mapper\UserMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [D:\WeWork\testssm\testmybatis\target\classes\mapper\UserMapper.xml]'. Cause: java.lang.IllegalArgumentException: Result Maps collection already contains value for com.tensquare.gathering.dao.UserDao.UserResultMap
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:587) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:91) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:373) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1344) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:578) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:501) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:760) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:869) ~[spring-context-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550) ~[spring-context-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140) ~[spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759) [spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:395) [spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327) [spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1255) [spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1243) [spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at com.tensquare.gathering.GatheringApplication.main(GatheringApplication.java:17) [classes/:na]
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adminService': Unsatisfied dependency expressed through field 'adminDao'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adminDao' defined in file [D:\WeWork\testssm\testmybatis\target\classes\com\tensquare\gathering\dao\AdminDao.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [D:\WeWork\testssm\testmybatis\target\classes\mapper\UserMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [D:\WeWork\testssm\testmybatis\target\classes\mapper\UserMapper.xml]'. Cause: java.lang.IllegalArgumentException: Result Maps collection already contains value for com.tensquare.gathering.dao.UserDao.UserResultMap
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:587) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:91) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:373) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1344) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:578) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:501) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1065) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:584) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	... 19 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adminDao' defined in file [D:\WeWork\testssm\testmybatis\target\classes\com\tensquare\gathering\dao\AdminDao.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [D:\WeWork\testssm\testmybatis\target\classes\mapper\UserMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [D:\WeWork\testssm\testmybatis\target\classes\mapper\UserMapper.xml]'. Cause: java.lang.IllegalArgumentException: Result Maps collection already contains value for com.tensquare.gathering.dao.UserDao.UserResultMap
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1439) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1326) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:578) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:501) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1065) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:584) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	... 32 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [D:\WeWork\testssm\testmybatis\target\classes\mapper\UserMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [D:\WeWork\testssm\testmybatis\target\classes\mapper\UserMapper.xml]'. Cause: java.lang.IllegalArgumentException: Result Maps collection already contains value for com.tensquare.gathering.dao.UserDao.UserResultMap
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:587) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1250) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1099) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:541) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:501) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1065) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1424) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	... 43 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [D:\WeWork\testssm\testmybatis\target\classes\mapper\UserMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [D:\WeWork\testssm\testmybatis\target\classes\mapper\UserMapper.xml]'. Cause: java.lang.IllegalArgumentException: Result Maps collection already contains value for com.tensquare.gathering.dao.UserDao.UserResultMap
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:579) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	... 55 common frames omitted
+Caused by: org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [D:\WeWork\testssm\testmybatis\target\classes\mapper\UserMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [D:\WeWork\testssm\testmybatis\target\classes\mapper\UserMapper.xml]'. Cause: java.lang.IllegalArgumentException: Result Maps collection already contains value for com.tensquare.gathering.dao.UserDao.UserResultMap
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:596) ~[mybatis-spring-2.0.2.jar:2.0.2]
+	at org.mybatis.spring.SqlSessionFactoryBean.afterPropertiesSet(SqlSessionFactoryBean.java:475) ~[mybatis-spring-2.0.2.jar:2.0.2]
+	at org.mybatis.spring.SqlSessionFactoryBean.getObject(SqlSessionFactoryBean.java:616) ~[mybatis-spring-2.0.2.jar:2.0.2]
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration.sqlSessionFactory(MybatisAutoConfiguration.java:180) ~[mybatis-spring-boot-autoconfigure-2.1.0.jar:2.1.0]
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$c83a925c.CGLIB$sqlSessionFactory$2(<generated>) ~[mybatis-spring-boot-autoconfigure-2.1.0.jar:2.1.0]
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$c83a925c$$FastClassBySpringCGLIB$$e9d541d8.invoke(<generated>) ~[mybatis-spring-boot-autoconfigure-2.1.0.jar:2.1.0]
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228) ~[spring-core-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:361) ~[spring-context-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$c83a925c.sqlSessionFactory(<generated>) ~[mybatis-spring-boot-autoconfigure-2.1.0.jar:2.1.0]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_281]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_281]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_281]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_281]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	... 56 common frames omitted
+Caused by: org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [D:\WeWork\testssm\testmybatis\target\classes\mapper\UserMapper.xml]'. Cause: java.lang.IllegalArgumentException: Result Maps collection already contains value for com.tensquare.gathering.dao.UserDao.UserResultMap
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:122) ~[mybatis-3.5.2.jar:3.5.2]
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.parse(XMLMapperBuilder.java:94) ~[mybatis-3.5.2.jar:3.5.2]
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:594) ~[mybatis-spring-2.0.2.jar:2.0.2]
+	... 69 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Result Maps collection already contains value for com.tensquare.gathering.dao.UserDao.UserResultMap
+	at org.apache.ibatis.session.Configuration$StrictMap.put(Configuration.java:947) ~[mybatis-3.5.2.jar:3.5.2]
+	at org.apache.ibatis.session.Configuration$StrictMap.put(Configuration.java:903) ~[mybatis-3.5.2.jar:3.5.2]
+	at org.apache.ibatis.session.Configuration.addResultMap(Configuration.java:660) ~[mybatis-3.5.2.jar:3.5.2]
+	at org.apache.ibatis.builder.MapperBuilderAssistant.addResultMap(MapperBuilderAssistant.java:209) ~[mybatis-3.5.2.jar:3.5.2]
+	at org.apache.ibatis.builder.ResultMapResolver.resolve(ResultMapResolver.java:47) ~[mybatis-3.5.2.jar:3.5.2]
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElement(XMLMapperBuilder.java:289) ~[mybatis-3.5.2.jar:3.5.2]
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElement(XMLMapperBuilder.java:253) ~[mybatis-3.5.2.jar:3.5.2]
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElements(XMLMapperBuilder.java:245) ~[mybatis-3.5.2.jar:3.5.2]
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:118) ~[mybatis-3.5.2.jar:3.5.2]
+	... 71 common frames omitted
+
+2021-07-07 17:41:21.037  INFO 23500 --- [main] c.t.gathering.GatheringApplication       : Starting GatheringApplication on SZLXBG0253852 with PID 23500 (D:\WeWork\testssm\testmybatis\target\classes started by chenjiafeng2 in D:\WeWork\testssm)
+2021-07-07 17:41:21.039  INFO 23500 --- [main] c.t.gathering.GatheringApplication       : No active profile set, falling back to default profiles: default
+2021-07-07 17:41:21.071  INFO 23500 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7c729a55: startup date [Wed Jul 07 17:41:21 CST 2021]; root of context hierarchy
+2021-07-07 17:41:21.820  INFO 23500 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9988 (http)
+2021-07-07 17:41:21.838  INFO 23500 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-07-07 17:41:21.838  INFO 23500 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.29
+2021-07-07 17:41:21.841  INFO 23500 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.27] using APR version [1.7.0].
+2021-07-07 17:41:21.841  INFO 23500 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-07-07 17:41:21.841  INFO 23500 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-07-07 17:41:21.843  INFO 23500 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+2021-07-07 17:41:21.899  INFO 23500 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-07-07 17:41:21.900  INFO 23500 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 829 ms
+2021-07-07 17:41:21.989  INFO 23500 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2021-07-07 17:41:21.990  INFO 23500 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2021-07-07 17:41:21.990  INFO 23500 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2021-07-07 17:41:21.990  INFO 23500 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2021-07-07 17:41:21.990  INFO 23500 --- [localhost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2021-07-07 17:41:21.990  INFO 23500 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2021-07-07 17:41:22.227  WARN 23500 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adminController': Unsatisfied dependency expressed through field 'adminService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adminService': Unsatisfied dependency expressed through field 'adminDao'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adminDao' defined in file [D:\WeWork\testssm\testmybatis\target\classes\com\tensquare\gathering\dao\AdminDao.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [D:\WeWork\testssm\testmybatis\target\classes\mapper\UserMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [D:\WeWork\testssm\testmybatis\target\classes\mapper\UserMapper.xml]'. Cause: java.lang.IllegalArgumentException: Mapped Statements collection already contains value for com.tensquare.gathering.dao.UserDao.save. please check file [D:\WeWork\testssm\testmybatis\target\classes\mapper\AdminMapper.xml] and file [D:\WeWork\testssm\testmybatis\target\classes\mapper\UserMapper.xml]
+2021-07-07 17:41:22.228  INFO 23500 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2021-07-07 17:41:22.236  INFO 23500 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-07-07 17:41:22.242 ERROR 23500 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adminController': Unsatisfied dependency expressed through field 'adminService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adminService': Unsatisfied dependency expressed through field 'adminDao'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adminDao' defined in file [D:\WeWork\testssm\testmybatis\target\classes\com\tensquare\gathering\dao\AdminDao.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [D:\WeWork\testssm\testmybatis\target\classes\mapper\UserMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [D:\WeWork\testssm\testmybatis\target\classes\mapper\UserMapper.xml]'. Cause: java.lang.IllegalArgumentException: Mapped Statements collection already contains value for com.tensquare.gathering.dao.UserDao.save. please check file [D:\WeWork\testssm\testmybatis\target\classes\mapper\AdminMapper.xml] and file [D:\WeWork\testssm\testmybatis\target\classes\mapper\UserMapper.xml]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:587) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:91) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:373) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1344) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:578) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:501) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:760) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:869) ~[spring-context-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550) ~[spring-context-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140) ~[spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759) [spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:395) [spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327) [spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1255) [spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1243) [spring-boot-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at com.tensquare.gathering.GatheringApplication.main(GatheringApplication.java:17) [classes/:na]
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adminService': Unsatisfied dependency expressed through field 'adminDao'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adminDao' defined in file [D:\WeWork\testssm\testmybatis\target\classes\com\tensquare\gathering\dao\AdminDao.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [D:\WeWork\testssm\testmybatis\target\classes\mapper\UserMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [D:\WeWork\testssm\testmybatis\target\classes\mapper\UserMapper.xml]'. Cause: java.lang.IllegalArgumentException: Mapped Statements collection already contains value for com.tensquare.gathering.dao.UserDao.save. please check file [D:\WeWork\testssm\testmybatis\target\classes\mapper\AdminMapper.xml] and file [D:\WeWork\testssm\testmybatis\target\classes\mapper\UserMapper.xml]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:587) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:91) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:373) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1344) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:578) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:501) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1065) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:584) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	... 19 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adminDao' defined in file [D:\WeWork\testssm\testmybatis\target\classes\com\tensquare\gathering\dao\AdminDao.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [D:\WeWork\testssm\testmybatis\target\classes\mapper\UserMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [D:\WeWork\testssm\testmybatis\target\classes\mapper\UserMapper.xml]'. Cause: java.lang.IllegalArgumentException: Mapped Statements collection already contains value for com.tensquare.gathering.dao.UserDao.save. please check file [D:\WeWork\testssm\testmybatis\target\classes\mapper\AdminMapper.xml] and file [D:\WeWork\testssm\testmybatis\target\classes\mapper\UserMapper.xml]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1439) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1326) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:578) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:501) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1065) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:584) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	... 32 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [D:\WeWork\testssm\testmybatis\target\classes\mapper\UserMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [D:\WeWork\testssm\testmybatis\target\classes\mapper\UserMapper.xml]'. Cause: java.lang.IllegalArgumentException: Mapped Statements collection already contains value for com.tensquare.gathering.dao.UserDao.save. please check file [D:\WeWork\testssm\testmybatis\target\classes\mapper\AdminMapper.xml] and file [D:\WeWork\testssm\testmybatis\target\classes\mapper\UserMapper.xml]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:587) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1250) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1099) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:541) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:501) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1065) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1424) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	... 43 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [D:\WeWork\testssm\testmybatis\target\classes\mapper\UserMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [D:\WeWork\testssm\testmybatis\target\classes\mapper\UserMapper.xml]'. Cause: java.lang.IllegalArgumentException: Mapped Statements collection already contains value for com.tensquare.gathering.dao.UserDao.save. please check file [D:\WeWork\testssm\testmybatis\target\classes\mapper\AdminMapper.xml] and file [D:\WeWork\testssm\testmybatis\target\classes\mapper\UserMapper.xml]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:579) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	... 55 common frames omitted
+Caused by: org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [D:\WeWork\testssm\testmybatis\target\classes\mapper\UserMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [D:\WeWork\testssm\testmybatis\target\classes\mapper\UserMapper.xml]'. Cause: java.lang.IllegalArgumentException: Mapped Statements collection already contains value for com.tensquare.gathering.dao.UserDao.save. please check file [D:\WeWork\testssm\testmybatis\target\classes\mapper\AdminMapper.xml] and file [D:\WeWork\testssm\testmybatis\target\classes\mapper\UserMapper.xml]
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:596) ~[mybatis-spring-2.0.2.jar:2.0.2]
+	at org.mybatis.spring.SqlSessionFactoryBean.afterPropertiesSet(SqlSessionFactoryBean.java:475) ~[mybatis-spring-2.0.2.jar:2.0.2]
+	at org.mybatis.spring.SqlSessionFactoryBean.getObject(SqlSessionFactoryBean.java:616) ~[mybatis-spring-2.0.2.jar:2.0.2]
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration.sqlSessionFactory(MybatisAutoConfiguration.java:180) ~[mybatis-spring-boot-autoconfigure-2.1.0.jar:2.1.0]
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$1ee1e613.CGLIB$sqlSessionFactory$2(<generated>) ~[mybatis-spring-boot-autoconfigure-2.1.0.jar:2.1.0]
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$1ee1e613$$FastClassBySpringCGLIB$$3f14de41.invoke(<generated>) ~[mybatis-spring-boot-autoconfigure-2.1.0.jar:2.1.0]
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228) ~[spring-core-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:361) ~[spring-context-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$1ee1e613.sqlSessionFactory(<generated>) ~[mybatis-spring-boot-autoconfigure-2.1.0.jar:2.1.0]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_281]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_281]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_281]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_281]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154) ~[spring-beans-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	... 56 common frames omitted
+Caused by: org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [D:\WeWork\testssm\testmybatis\target\classes\mapper\UserMapper.xml]'. Cause: java.lang.IllegalArgumentException: Mapped Statements collection already contains value for com.tensquare.gathering.dao.UserDao.save. please check file [D:\WeWork\testssm\testmybatis\target\classes\mapper\AdminMapper.xml] and file [D:\WeWork\testssm\testmybatis\target\classes\mapper\UserMapper.xml]
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:122) ~[mybatis-3.5.2.jar:3.5.2]
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.parse(XMLMapperBuilder.java:94) ~[mybatis-3.5.2.jar:3.5.2]
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:594) ~[mybatis-spring-2.0.2.jar:2.0.2]
+	... 69 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Mapped Statements collection already contains value for com.tensquare.gathering.dao.UserDao.save. please check file [D:\WeWork\testssm\testmybatis\target\classes\mapper\AdminMapper.xml] and file [D:\WeWork\testssm\testmybatis\target\classes\mapper\UserMapper.xml]
+	at org.apache.ibatis.session.Configuration$StrictMap.put(Configuration.java:947) ~[mybatis-3.5.2.jar:3.5.2]
+	at org.apache.ibatis.session.Configuration$StrictMap.put(Configuration.java:903) ~[mybatis-3.5.2.jar:3.5.2]
+	at org.apache.ibatis.session.Configuration.addMappedStatement(Configuration.java:702) ~[mybatis-3.5.2.jar:3.5.2]
+	at org.apache.ibatis.builder.MapperBuilderAssistant.addMappedStatement(MapperBuilderAssistant.java:297) ~[mybatis-3.5.2.jar:3.5.2]
+	at org.apache.ibatis.builder.xml.XMLStatementBuilder.parseStatementNode(XMLStatementBuilder.java:113) ~[mybatis-3.5.2.jar:3.5.2]
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.buildStatementFromContext(XMLMapperBuilder.java:137) ~[mybatis-3.5.2.jar:3.5.2]
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.buildStatementFromContext(XMLMapperBuilder.java:130) ~[mybatis-3.5.2.jar:3.5.2]
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:120) ~[mybatis-3.5.2.jar:3.5.2]
+	... 71 common frames omitted
+
+2021-07-07 17:43:32.859  INFO 22724 --- [main] c.t.gathering.GatheringApplication       : Starting GatheringApplication on SZLXBG0253852 with PID 22724 (D:\WeWork\testssm\testmybatis\target\classes started by chenjiafeng2 in D:\WeWork\testssm)
+2021-07-07 17:43:32.861  INFO 22724 --- [main] c.t.gathering.GatheringApplication       : No active profile set, falling back to default profiles: default
+2021-07-07 17:43:32.888  INFO 22724 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@158da8e: startup date [Wed Jul 07 17:43:32 CST 2021]; root of context hierarchy
+2021-07-07 17:43:33.629  INFO 22724 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9988 (http)
+2021-07-07 17:43:33.641  INFO 22724 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-07-07 17:43:33.641  INFO 22724 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.29
+2021-07-07 17:43:33.646  INFO 22724 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.27] using APR version [1.7.0].
+2021-07-07 17:43:33.646  INFO 22724 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-07-07 17:43:33.646  INFO 22724 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-07-07 17:43:33.648  INFO 22724 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+2021-07-07 17:43:33.704  INFO 22724 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-07-07 17:43:33.705  INFO 22724 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 817 ms
+2021-07-07 17:43:33.803  INFO 22724 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2021-07-07 17:43:33.804  INFO 22724 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2021-07-07 17:43:33.804  INFO 22724 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2021-07-07 17:43:33.804  INFO 22724 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2021-07-07 17:43:33.804  INFO 22724 --- [localhost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2021-07-07 17:43:33.804  INFO 22724 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2021-07-07 17:43:34.100  INFO 22724 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: ac874104-b93d-42e3-80be-a1da6594cca2
+
+2021-07-07 17:43:34.210  INFO 22724 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@288cdaab, org.springframework.security.web.context.SecurityContextPersistenceFilter@58b67519, org.springframework.security.web.header.HeaderWriterFilter@a137d7a, org.springframework.security.web.authentication.logout.LogoutFilter@138caeca, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@30d25c03, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@37ce3644, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@23b3aa8c, org.springframework.security.web.session.SessionManagementFilter@3f49e266, org.springframework.security.web.access.ExceptionTranslationFilter@62628e78, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7308ffff]
+2021-07-07 17:43:34.245  INFO 22724 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-07-07 17:43:34.338  INFO 22724 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@158da8e: startup date [Wed Jul 07 17:43:32 CST 2021]; root of context hierarchy
+2021-07-07 17:43:34.365  INFO 22724 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/login],methods=[POST]}" onto public com.tensquare.gathering.utils.Result com.tensquare.gathering.controller.AdminController.login(java.util.Map<java.lang.String, java.lang.String>)
+2021-07-07 17:43:34.365  INFO 22724 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/add],methods=[POST]}" onto public com.tensquare.gathering.utils.Result com.tensquare.gathering.controller.AdminController.adminAdd(com.tensquare.gathering.entity.Admin)
+2021-07-07 17:43:34.366  INFO 22724 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/gathering/list],methods=[GET]}" onto public com.tensquare.gathering.utils.Result com.tensquare.gathering.controller.GatheringController.getgatheringList()
+2021-07-07 17:43:34.367  INFO 22724 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/gathering/updateById],methods=[POST]}" onto public com.tensquare.gathering.utils.Result com.tensquare.gathering.controller.GatheringController.updateById(com.tensquare.gathering.entity.Gathering)
+2021-07-07 17:43:34.367  INFO 22724 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/gathering/gathering],methods=[POST]}" onto public com.tensquare.gathering.utils.Result com.tensquare.gathering.controller.GatheringController.findById(com.tensquare.gathering.entity.Gathering)
+2021-07-07 17:43:34.367  INFO 22724 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/gathering/findName],methods=[POST]}" onto public com.tensquare.gathering.utils.Result com.tensquare.gathering.controller.GatheringController.findByName(com.tensquare.gathering.entity.Gathering)
+2021-07-07 17:43:34.367  INFO 22724 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/login],methods=[POST]}" onto public com.tensquare.gathering.utils.Result com.tensquare.gathering.controller.UserController.login(com.tensquare.gathering.entity.User)
+2021-07-07 17:43:34.367  INFO 22724 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/add],methods=[POST]}" onto public com.tensquare.gathering.utils.Result com.tensquare.gathering.controller.UserController.add(com.tensquare.gathering.entity.User)
+2021-07-07 17:43:34.369  INFO 22724 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2021-07-07 17:43:34.369  INFO 22724 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2021-07-07 17:43:34.386  INFO 22724 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-07-07 17:43:34.386  INFO 22724 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-07-07 17:43:34.470  INFO 22724 --- [main] o.s.ui.freemarker.SpringTemplateLoader   : SpringTemplateLoader for FreeMarker: using resource loader [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@158da8e: startup date [Wed Jul 07 17:43:32 CST 2021]; root of context hierarchy] and template loader path [classpath:/templates/]
+2021-07-07 17:43:34.471  INFO 22724 --- [main] o.s.w.s.v.f.FreeMarkerConfigurer         : ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2021-07-07 17:43:34.488  WARN 22724 --- [main] o.s.b.a.f.FreeMarkerAutoConfiguration    : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2021-07-07 17:43:34.573  INFO 22724 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2021-07-07 17:43:34.574  INFO 22724 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2021-07-07 17:43:34.579  INFO 22724 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2021-07-07 17:43:34.599  INFO 22724 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9988 (http) with context path ''
+2021-07-07 17:43:34.601  INFO 22724 --- [main] c.t.gathering.GatheringApplication       : Started GatheringApplication in 1.953 seconds (JVM running for 2.423)
+2021-07-07 17:43:37.289  INFO 22724 --- [http-nio-9988-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2021-07-07 17:43:37.290  INFO 22724 --- [http-nio-9988-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2021-07-07 17:43:37.303  INFO 22724 --- [http-nio-9988-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 13 ms
+2021-07-07 17:43:37.367  INFO 22724 --- [http-nio-9988-exec-1] c.t.gathering.aspect.WebLogAspect        : AdminController.adminAdd Begin 入参为:第1个参数为:Admin(id=null, loginname=root, password=root, state=1)
+
+2021-07-07 17:43:37.457  INFO 22724 --- [http-nio-9988-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-07-07 17:43:37.565  INFO 22724 --- [http-nio-9988-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-07-07 17:43:37.594  INFO 22724 --- [http-nio-9988-exec-1] c.t.gathering.aspect.WebLogAspect        : AdminController.adminAdd End 出参为:Result(flag=true, code=200, message=增加成功, data=null),耗时:228
+2021-07-07 17:45:40.667  INFO 14704 --- [main] c.t.gathering.GatheringApplication       : Starting GatheringApplication on SZLXBG0253852 with PID 14704 (D:\WeWork\testssm\testmybatis\target\classes started by chenjiafeng2 in D:\WeWork\testssm)
+2021-07-07 17:45:40.668  INFO 14704 --- [main] c.t.gathering.GatheringApplication       : No active profile set, falling back to default profiles: default
+2021-07-07 17:45:40.695  INFO 14704 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7c729a55: startup date [Wed Jul 07 17:45:40 CST 2021]; root of context hierarchy
+2021-07-07 17:45:41.406  INFO 14704 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9988 (http)
+2021-07-07 17:45:41.418  INFO 14704 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-07-07 17:45:41.418  INFO 14704 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.29
+2021-07-07 17:45:41.421  INFO 14704 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.27] using APR version [1.7.0].
+2021-07-07 17:45:41.421  INFO 14704 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-07-07 17:45:41.421  INFO 14704 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-07-07 17:45:41.423  INFO 14704 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+2021-07-07 17:45:41.477  INFO 14704 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-07-07 17:45:41.477  INFO 14704 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 782 ms
+2021-07-07 17:45:41.564  INFO 14704 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2021-07-07 17:45:41.565  INFO 14704 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2021-07-07 17:45:41.565  INFO 14704 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2021-07-07 17:45:41.565  INFO 14704 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2021-07-07 17:45:41.565  INFO 14704 --- [localhost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2021-07-07 17:45:41.565  INFO 14704 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2021-07-07 17:45:41.895  INFO 14704 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: ac0b9d68-6a35-4ad2-8b19-ecb7a166386e
+
+2021-07-07 17:45:41.967  INFO 14704 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@226eba67, org.springframework.security.web.context.SecurityContextPersistenceFilter@116a2108, org.springframework.security.web.header.HeaderWriterFilter@4df39a88, org.springframework.security.web.authentication.logout.LogoutFilter@7a93b263, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7c1c5936, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4ad3d266, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1cb7936c, org.springframework.security.web.session.SessionManagementFilter@281ce6bb, org.springframework.security.web.access.ExceptionTranslationFilter@3cd206b5, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@573284a5]
+2021-07-07 17:45:42.013  INFO 14704 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-07-07 17:45:42.243  INFO 14704 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7c729a55: startup date [Wed Jul 07 17:45:40 CST 2021]; root of context hierarchy
+2021-07-07 17:45:42.286  INFO 14704 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/login],methods=[POST]}" onto public com.tensquare.gathering.utils.Result com.tensquare.gathering.controller.AdminController.login(java.util.Map<java.lang.String, java.lang.String>)
+2021-07-07 17:45:42.287  INFO 14704 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/add],methods=[POST]}" onto public com.tensquare.gathering.utils.Result com.tensquare.gathering.controller.AdminController.adminAdd(com.tensquare.gathering.entity.Admin)
+2021-07-07 17:45:42.291  INFO 14704 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/gathering/findName],methods=[POST]}" onto public com.tensquare.gathering.utils.Result com.tensquare.gathering.controller.GatheringController.findByName(com.tensquare.gathering.entity.Gathering)
+2021-07-07 17:45:42.291  INFO 14704 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/gathering/updateById],methods=[POST]}" onto public com.tensquare.gathering.utils.Result com.tensquare.gathering.controller.GatheringController.updateById(com.tensquare.gathering.entity.Gathering)
+2021-07-07 17:45:42.291  INFO 14704 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/gathering/gathering],methods=[POST]}" onto public com.tensquare.gathering.utils.Result com.tensquare.gathering.controller.GatheringController.findById(com.tensquare.gathering.entity.Gathering)
+2021-07-07 17:45:42.292  INFO 14704 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/gathering/list],methods=[GET]}" onto public com.tensquare.gathering.utils.Result com.tensquare.gathering.controller.GatheringController.getgatheringList()
+2021-07-07 17:45:42.292  INFO 14704 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/add],methods=[POST]}" onto public com.tensquare.gathering.utils.Result com.tensquare.gathering.controller.UserController.add(com.tensquare.gathering.entity.User)
+2021-07-07 17:45:42.292  INFO 14704 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/login],methods=[POST]}" onto public com.tensquare.gathering.utils.Result com.tensquare.gathering.controller.UserController.login(com.tensquare.gathering.entity.User)
+2021-07-07 17:45:42.293  INFO 14704 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2021-07-07 17:45:42.294  INFO 14704 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2021-07-07 17:45:42.324  INFO 14704 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-07-07 17:45:42.325  INFO 14704 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-07-07 17:45:42.450  INFO 14704 --- [main] o.s.ui.freemarker.SpringTemplateLoader   : SpringTemplateLoader for FreeMarker: using resource loader [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7c729a55: startup date [Wed Jul 07 17:45:40 CST 2021]; root of context hierarchy] and template loader path [classpath:/templates/]
+2021-07-07 17:45:42.450  INFO 14704 --- [main] o.s.w.s.v.f.FreeMarkerConfigurer         : ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2021-07-07 17:45:42.474  WARN 14704 --- [main] o.s.b.a.f.FreeMarkerAutoConfiguration    : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2021-07-07 17:45:42.583  INFO 14704 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2021-07-07 17:45:42.584  INFO 14704 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2021-07-07 17:45:42.588  INFO 14704 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2021-07-07 17:45:42.611  INFO 14704 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9988 (http) with context path ''
+2021-07-07 17:45:42.614  INFO 14704 --- [main] c.t.gathering.GatheringApplication       : Started GatheringApplication in 2.143 seconds (JVM running for 2.726)
+2021-07-07 17:45:46.663  INFO 14704 --- [http-nio-9988-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2021-07-07 17:45:46.663  INFO 14704 --- [http-nio-9988-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2021-07-07 17:45:46.678  INFO 14704 --- [http-nio-9988-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 15 ms
+2021-07-07 17:45:46.743  INFO 14704 --- [http-nio-9988-exec-1] c.t.gathering.aspect.WebLogAspect        : AdminController.adminAdd Begin 入参为:第1个参数为:Admin(id=null, loginname=root, password=root, state=1)
+
+2021-07-07 17:45:46.829  INFO 14704 --- [http-nio-9988-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-07-07 17:45:46.930  INFO 14704 --- [http-nio-9988-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-07-07 17:45:46.956  INFO 14704 --- [http-nio-9988-exec-1] c.t.gathering.aspect.WebLogAspect        : AdminController.adminAdd End 出参为:Result(flag=true, code=200, message=增加成功, data=null),耗时:213
+2021-07-07 18:39:04.634  WARN 14704 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=38m17s363ms181µs100ns).

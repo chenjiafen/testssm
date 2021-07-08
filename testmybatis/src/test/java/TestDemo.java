@@ -1,11 +1,11 @@
 import com.tensquare.gathering.GatheringApplication;
-import com.tensquare.gathering.mapper.GatheringMapper;
-import com.tensquare.gathering.pojo.Gathering;
+import com.tensquare.gathering.dao.GatheringDao;
+import com.tensquare.gathering.entity.Gathering;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.boot.test.context.TestComponent;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringRunner;
 
@@ -23,21 +23,21 @@ import java.util.List;
 public class TestDemo {
 
    @Autowired
-   private GatheringMapper gatheringMapper;
+   private GatheringDao gatheringDao;
 
    @Test
    public void test01() {
       Gathering gathering = new Gathering ();
       gathering.setName ( "aaaa" );
       gathering.setId ( "1" );
-      Gathering gs = gatheringMapper.getGathering ( gathering );
+      Gathering gs = gatheringDao.getGathering ( gathering );
       System.out.println ( gs );
    }
 
    @Test
    public void test02() {
 
-      List<Gathering> gatheringList = gatheringMapper.getGatheringList ();
+      List<Gathering> gatheringList = gatheringDao.getGatheringList ();
       for (Gathering gathering : gatheringList) {
          System.out.println ( gathering );
       }
@@ -58,7 +58,7 @@ public class TestDemo {
       gatheringList.add ( ge );
       gatheringList.add ( ge1 );
       for (Gathering s : gatheringList) {
-         gatheringMapper.updateGathering ( s );
+         gatheringDao.updateGathering ( s );
 
 
       }
@@ -80,7 +80,7 @@ public class TestDemo {
       gatheringList.add ( ge );
       gatheringList.add ( ge1 );
       for (Gathering s : gatheringList) {
-         flag=gatheringMapper.updategathering( s );
+         flag= gatheringDao.updategathering( s );
 
 
       }
@@ -98,7 +98,19 @@ public class TestDemo {
       ge1.setId ( "94377594140" );
       gatheringList.add ( ge );
       gatheringList.add ( ge1 );
-      gatheringMapper.updatega ( gatheringList );
+      gatheringDao.updatega ( gatheringList );
 
+   }
+
+   @Test
+   public void test001() {
+      String pass = "admin";
+
+      BCryptPasswordEncoder encoder = new BCryptPasswordEncoder();
+      final String passHash = encoder.encode(pass);
+      System.out.println(passHash);
+
+      final boolean matches = encoder.matches(pass, passHash);
+      System.out.println(matches);
    }
 }

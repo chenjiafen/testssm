@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.tensquare.gathering.dao.AdminDao">
+    <resultMap id="AdminResultMap" type="com.tensquare.gathering.entity.Admin">
+        <id column="id" property="id"/>
+        <result column="loginname" property="loginname"/>
+        <result column="password" property="password"/>
+        <result column="state" property="state"/>
+    </resultMap>
+    <sql id="admin_list">
+        id,loginname,password,state
+    </sql>
+<!--    <select id="findByMobile" resultMap="AdminResultMap">-->
+<!--        select-->
+<!--        <include refid="admin_list"/>-->
+<!--        from tb_user where mobile=#{mobile};-->
+<!--    </select>-->
+
+    <insert id="save" parameterType="com.tensquare.gathering.entity.Admin">
+    insert into tb_admin (id,loginname,password,state)
+    values
+    ( #{id,jdbcType=VARCHAR},
+      #{loginname,jdbcType=VARCHAR},
+      #{password,jdbcType=VARCHAR},
+      #{state,jdbcType=VARCHAR}
+      )
+  </insert>
+</mapper>

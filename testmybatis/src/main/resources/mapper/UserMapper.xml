@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.tensquare.gathering.dao.UserDao">
+    <resultMap id="UserResultMap" type="com.tensquare.gathering.entity.User">
+        <id column="id" property="id"/>
+        <result column="mobile" property="mobile"/>
+        <result column="password" property="password"/>
+        <result column="nickname" property="nickname"/>
+        <result column="sex" property="sex"/>
+        <result column="birthday" property="birthday"/>
+        <result column="avatar" property="avatar"/>
+        <result column="email" property="email"/>
+        <result column="regdate" property="regdate"/>
+        <result column="updatedate" property="updatedate"/>
+        <result column="lastdate" property="lastdate"/>
+        <result column="online" property="online"/>
+        <result column="interest" property="interest"/>
+        <result column="personality" property="personality"/>
+        <result column="fanscount" property="fanscount"/>
+        <result column="followcount" property="followcount"/>
+    </resultMap>
+    <sql id="user_list">
+        id,mobile,password,nickname,sex,birthday,avatar,email,regdate,updatedate,lastdate,online,interest,personality,fanscount,followcount
+    </sql>
+    <!--    <update id="save" parameterType="com.tensquare.gathering.entity.User">-->
+    <!--        update tb_gathering-->
+    <!--        <set>-->
+    <!--            <if test="mobile !=null">-->
+    <!--                `mobile`=#{mobile}-->
+    <!--            </if>-->
+    <!--            <if test="password !=null">-->
+    <!--                `password`=#{password}-->
+    <!--            </if>-->
+    <!--            <if test="nickname !=null">-->
+    <!--                `nickname`=#{nickname}-->
+    <!--            </if>-->
+    <!--            <if test="sex !=null">-->
+    <!--                `sex`=#{sex}-->
+    <!--            </if>-->
+    <!--            <if test="birthday !=null">-->
+    <!--                `birthday`=#{birthday}-->
+    <!--            </if>-->
+    <!--            <if test="avatar !=null">-->
+    <!--                `avatar`=#{avatar}-->
+    <!--            </if>-->
+    <!--            <if test="email !=null">-->
+    <!--                `email`=#{email}-->
+    <!--            </if>-->
+    <!--            <if test="regdate !=null">-->
+    <!--                `regdate`=#{regdate}-->
+    <!--            </if>-->
+    <!--            <if test="lastdate !=null">-->
+    <!--                `lastdate`=#{lastdate}-->
+    <!--            </if>-->
+    <!--            <if test="online !=null">-->
+    <!--                `online`=#{online}-->
+    <!--            </if>-->
+    <!--            <if test="interest !=null">-->
+    <!--                `interest`=#{interest}-->
+    <!--            </if>-->
+    <!--            <if test="personality !=null">-->
+    <!--                `personality`=#{personality}-->
+    <!--            </if>-->
+    <!--            <if test="fanscount !=null">-->
+    <!--                `fanscount`=#{fanscount}-->
+    <!--            </if>-->
+    <!--            <if test="followcount !=null">-->
+    <!--                `followcount`=#{followcount}-->
+    <!--            </if>-->
+    <!--        </set>-->
+    <!--        where id=#{id} ;-->
+    <!--    </update>-->
+    <select id="findByMobile" resultMap="UserResultMap">
+        select
+        <include refid="user_list"/>
+        from tb_user where mobile=#{mobile};
+    </select>
+
+    <insert id="save" parameterType="com.tensquare.gathering.entity.User">
+    insert into tb_user (id, mobile, password,
+      nickname, sex, birthday,
+      avatar, email, regdate,
+      updatedate, lastdate, online,
+      interest,personality,fanscount,followcount)
+    values
+    (#{id,jdbcType=VARCHAR}, #{mobile,jdbcType=VARCHAR}, #{password,jdbcType=VARCHAR},
+      #{nickname,jdbcType=VARCHAR}, #{sex,jdbcType=VARCHAR}, #{birthday,jdbcType=TIMESTAMP},
+      #{avatar,jdbcType=VARCHAR}, #{email,jdbcType=VARCHAR}, #{regdate,jdbcType=TIMESTAMP},
+      #{updatedate,jdbcType=TIMESTAMP}, #{lastdate,jdbcType=TIMESTAMP}, #{online,jdbcType=BIGINT},
+      #{interest,jdbcType=VARCHAR}, #{personality,jdbcType=VARCHAR},#{fanscount,jdbcType=INTEGER},
+      #{followcount,jdbcType=INTEGER}
+      )
+  </insert>
+</mapper>

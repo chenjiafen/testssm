@@ -48,6 +48,40 @@
             <version>RELEASE</version>
             <scope>compile</scope>
         </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
+        <!--切面-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-aop</artifactId>
+            <version>2.3.11.RELEASE</version>
+        </dependency>
+        <!--        &lt;!&ndash;多数据源&ndash;&gt;-->
+        <!--        <dependency>-->
+        <!--            <groupId>com.alibaba</groupId>-->
+        <!--            <artifactId>druid-spring-boot-starter</artifactId>-->
+        <!--            <version>1.1.10</version>-->
+        <!--        </dependency>-->
+        <!-- JWT工具依赖 -->
+        <dependency>
+            <groupId>io.jsonwebtoken</groupId>
+            <artifactId>jjwt</artifactId>
+            <version>0.6.0</version>
+        </dependency>
+        <!--注解配置-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-configuration-processor</artifactId>
+            <optional>true</optional>
+        </dependency>
+        <!--spring-security安全框架-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-security</artifactId>
+            <version>2.4.1</version>
+        </dependency>
     </dependencies>
     <build>
         <plugins>
