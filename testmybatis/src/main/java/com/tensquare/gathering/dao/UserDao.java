@@ -22,6 +22,8 @@ public interface UserDao {
 
     void save(User user);
 
+    void deleteById(String id);
+
     /**
     *粉丝数更新
     * @param userid

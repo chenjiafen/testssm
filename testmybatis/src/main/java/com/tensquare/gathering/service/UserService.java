@@ -1,6 +1,7 @@
 package com.tensquare.gathering.service;
 
 import com.sun.xml.internal.bind.v2.model.core.ID;
+import com.sun.xml.internal.ws.policy.EffectiveAlternativeSelector;
 import com.tensquare.gathering.dao.UserDao;
 import com.tensquare.gathering.entity.Admin;
 import com.tensquare.gathering.entity.User;
@@ -8,6 +9,8 @@ import com.tensquare.gathering.utils.IdWorker;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
+
+import java.util.Objects;
 
 /**
  * @author chenjiafeng2
@@ -41,13 +44,24 @@ public class UserService {
 
     /**
      * 新增用户
+     *
      * @param user
      */
-    public void add(User user){
+    public void add(User user) {
         user.setId(idWorker.nextId() + "");
         String newpassword = encoder.encode(user.getPassword());//加密后的
         user.setPassword(newpassword);
         userDao.save(user);
     }
 
+    /**
+     * 删除用户
+     *
+     * @param id
+     */
+    public void deleteById(String id) {
+        if (!Objects.isNull(id)) {
+            userDao.deleteById(id);
+        }
+    }
 }

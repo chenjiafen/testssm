@@ -33,3 +33,7 @@ logging:
     console: "%d - %msg%n"
   path: testmybatis/src/main/resources/log
   file: ${logging.path}/base.log
+jwt:
+  config:
+    ttl: 5
+    key: chenjiafeng

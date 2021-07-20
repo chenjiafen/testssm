@@ -24,6 +24,9 @@
     <sql id="user_list">
         id,mobile,password,nickname,sex,birthday,avatar,email,regdate,updatedate,lastdate,online,interest,personality,fanscount,followcount
     </sql>
+    <delete id="deleteById" parameterType="com.tensquare.gathering.entity.User">
+            delete from tb_user where id = #{id}
+    </delete>
     <!--    <update id="save" parameterType="com.tensquare.gathering.entity.User">-->
     <!--        update tb_gathering-->
     <!--        <set>-->

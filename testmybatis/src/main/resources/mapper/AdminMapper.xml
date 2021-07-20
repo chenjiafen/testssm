@@ -12,11 +12,11 @@
     <sql id="admin_list">
         id,loginname,password,state
     </sql>
-<!--    <select id="findByMobile" resultMap="AdminResultMap">-->
-<!--        select-->
-<!--        <include refid="admin_list"/>-->
-<!--        from tb_user where mobile=#{mobile};-->
-<!--    </select>-->
+    <select id="findByLoginname" resultMap="AdminResultMap">
+        select
+        <include refid="admin_list"/>
+        from tb_admin where loginname=#{loginname};
+    </select>
 
     <insert id="save" parameterType="com.tensquare.gathering.entity.Admin">
     insert into tb_admin (id,loginname,password,state)
@@ -27,4 +27,5 @@
       #{state,jdbcType=VARCHAR}
       )
   </insert>
+
 </mapper>

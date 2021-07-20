@@ -2,6 +2,7 @@ package com.tensquare.gathering;
 
 
 import com.tensquare.gathering.utils.IdWorker;
+import com.tensquare.gathering.utils.JwtUtil;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -25,6 +26,10 @@ public class GatheringApplication {
     @Bean
     public IdWorker idWorkker(){
         return new IdWorker(1, 1);
+    }
+    @Bean
+    public JwtUtil jwtUtil(){
+        return  new JwtUtil();
     }
 
 }
